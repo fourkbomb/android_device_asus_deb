@@ -13,14 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product-if-exists, vendor/asus/deb/deb-vendor.mk)
 
 # rild
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     rild \
     CarrierConfig \
     BasicSmsReceiver
 
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     device/asus/deb/fstab.deb:root/fstab.flo \
     device/asus/deb/init.deb.rc:root/init.flo.rc
 
