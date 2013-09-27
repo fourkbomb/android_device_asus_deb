@@ -173,6 +173,12 @@ on post-fs-data
     # Modify from 777 (for camera calibration) to 775
     chmod 775 /persist/camera_calibration
 
+    # Modify from 777 (for lightsensor) to 775
+    chmod 775 /persist/lightsensor
+
+    # Modify from 777 (for lightsensor calibration data) to 664
+    chmod 664 /persist/lightsensor/AL3010_Config.ini
+
     chmod 664 /persist/ssn
     chmod 664 /persist/60isn
 
