@@ -358,7 +358,7 @@ service charger /sbin/healthd -c
 
 service thermald /system/bin/thermald
     class main
-    group radio
+    group radio system
 
 service mpdecision /system/bin/mpdecision --avg_comp
     class main
