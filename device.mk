@@ -18,7 +18,6 @@ $(call inherit-product-if-exists, vendor/asus/deb/deb-vendor.mk)
 # rild
 PRODUCT_PACKAGES += \
     rild \
-    CarrierConfig \
     BasicSmsReceiver
 
 PRODUCT_COPY_FILES += \
