@@ -21,6 +21,9 @@ $(call inherit-product, vendor/cm/config/telephony.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
+# Include device configuration
+$(call inherit-product, device/asus/deb/device.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
 PRODUCT_NAME := cm_deb
